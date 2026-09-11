@@ -8,21 +8,18 @@
   <meta property="og:title" content="Palheim — Invite a Viking. Not a mod." />
   <meta property="og:description" content="An AI companion that joins Valheim as a real multiplayer player. Friends stay vanilla. Local-first brains. Dogfooding now." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1210" />
+  <meta name="theme-color" content="#071018" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="aurora" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Palheim home">
-      <span class="logo-mark" aria-hidden="true">ᚹ</span>
-      <span class="logo-text">Palheim</span>
-    </a>
+    <a class="logo" href="#top">Palheim</a>
     <nav class="nav" aria-label="Primary">
       <a href="#how">How it works</a>
       <a href="#why">Why not a mod</a>
@@ -30,11 +27,8 @@
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="#waitlist">Join waitlist</a>
     </nav>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
-      <span></span><span></span>
-    </button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
   </header>
-
   <nav id="mobile-nav" class="mobile-nav" hidden>
     <a href="#how">How it works</a>
     <a href="#why">Why not a mod</a>
@@ -45,214 +39,72 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow"><span class="badge">Private dogfood · Valheim 1.0</span> AI companion for Valheim 1.0</p>
-        <h1>Invite a Viking.<br /><em>Not a mod.</em></h1>
-        <p class="subhead">Palheim joins your server as a multiplayer player. Your friends keep their vanilla clients — no BepInEx, no plugin roulette.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
-          <a class="btn btn-ghost" href="#how">How it works</a>
-        </div>
-        <p class="micro-proof">Dogfooding first on our own dedicated server. Local-first brains. Bootstrap, not vapor.</p>
+      <p class="eyebrow"><span class="badge">Private dogfood · Valheim 1.0</span></p>
+      <h1>Invite a Viking.<br /><em>Not a mod.</em></h1>
+      <p class="subhead">Palheim joins your server as a multiplayer player. Your friends keep their vanilla clients — no BepInEx, no plugin roulette.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
-      <div class="hero-panel" aria-hidden="true">
-        <div class="rune-ring">
-          <div class="rune-core">
-            <span>ᚦ</span>
-          </div>
-        </div>
-        <ul class="lock-chips">
-          <li>Invite as player</li>
-          <li>Friends stay vanilla</li>
-          <li>No BepInEx product path</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="features" aria-label="What you get">
-      <div class="feature-strip">
-        <article>
-          <h3>Joins as a player</h3>
-          <p>Visible to the whole party — a peer on the server, not a local prefab.</p>
-        </article>
-        <article>
-          <h3>Friends stay vanilla</h3>
-          <p>Zero client mods on their PCs. Invite a teammate, not a plugin stack.</p>
-        </article>
-        <article>
-          <h3>Commands + chat</h3>
-          <p>Not a mute follower statue. Talk to it. Point it at wood, deer, or a portal.</p>
-        </article>
-        <article>
-          <h3>Local LLM bias</h3>
-          <p>Keep brains cheap and on our metal when we can. Dogfood on real iron first.</p>
-        </article>
-      </div>
+      <p class="micro-proof">Dogfooding first on our own dedicated server. Local-first brains. Bootstrap, not vapor.</p>
     </section>
 
     <section id="how" class="section">
-      <div class="section-head">
-        <p class="section-kicker">Three steps</p>
-        <h2>How it works</h2>
-      </div>
+      <p class="section-kicker">Three steps</p>
+      <h2>How it works</h2>
       <ol class="steps">
-        <li>
-          <span class="step-num">01</span>
-          <div>
-            <h3>Host like normal</h3>
-            <p>Run Valheim the way you already do — dedicated server or friends’ session. No client mods required on anyone’s machine.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">02</span>
-          <div>
-            <h3>Invite Palheim</h3>
-            <p>Send a join code / assignment from the site (or later, a phone). Palheim boots a real player client on our bot host and walks into the world as a peer.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">03</span>
-          <div>
-            <h3>Play with a mind</h3>
-            <p>Talk to it. Point it at wood, deer, or a portal. It plans with a local LLM bias and acts through player skills — follow, gather, fight, chat — not a scripted NPC prefab in your install.</p>
-          </div>
-        </li>
+        <li><span class="step-num">01</span><div><h3>Host like normal</h3><p>Run Valheim the way you already do — dedicated server or friends’ session. No client mods required on anyone’s machine.</p></div></li>
+        <li><span class="step-num">02</span><div><h3>Invite Palheim</h3><p>Send a join code / assignment from the site. Palheim boots a real player client on our bot host and walks in as a peer.</p></div></li>
+        <li><span class="step-num">03</span><div><h3>Play with a mind</h3><p>Talk to it. Point it at wood, deer, or a portal. Local-LLM-biased planner — follow, gather, fight, chat — not a scripted NPC prefab.</p></div></li>
       </ol>
     </section>
 
-    <section id="why" class="section section-alt">
-      <div class="section-head">
-        <p class="section-kicker">Product lock</p>
-        <h2>Why not another NPC mod</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-copy">
-          <p>Most “AI companions” for Valheim are <strong>client mods</strong>: they spawn an NPC in <em>your</em> game and often need everyone (or at least the host) on a modded stack. That cuts day-one 1.0 players and anyone who just wants vanilla.</p>
-          <p>Palheim takes the harder seat: <strong>show up as a multiplayer player</strong>. Friends stay clean. You invite a teammate, not a plugin.</p>
-          <p class="why-punch">We’re not forking closed companion mods. We’re building the invite-player path.</p>
-        </div>
-        <aside class="contrast-card">
-          <h3>NPC mod path</h3>
-          <ul>
-            <li>Client install / plugin stack</li>
-            <li>Often needs host (or all) modded</li>
-            <li>Prefab in your install</li>
-            <li>BepInEx / r2modman roulette</li>
-          </ul>
-          <div class="vs">vs</div>
-          <h3 class="good">Palheim path</h3>
-          <ul class="good-list">
-            <li>Joins as multiplayer player</li>
-            <li>Friends remain vanilla</li>
-            <li>Bot host runs the tooling</li>
-            <li>No BepInEx product path</li>
-          </ul>
-        </aside>
-      </div>
+    <section id="why" class="section">
+      <p class="section-kicker">Product lock</p>
+      <h2>Why not another NPC mod</h2>
+      <p>Most “AI companions” for Valheim are <strong>client mods</strong>: they spawn an NPC in your game and often need a modded stack. That cuts day-one 1.0 players.</p>
+      <p>Palheim takes the harder seat: <strong>show up as a multiplayer player</strong>. Friends stay clean. You invite a teammate, not a plugin.</p>
     </section>
 
     <section id="roadmap" class="section">
-      <div class="section-head">
-        <p class="section-kicker">Honest timeline</p>
-        <h2>Roadmap</h2>
-      </div>
+      <p class="section-kicker">Honest timeline</p>
+      <h2>Roadmap</h2>
       <div class="roadmap">
-        <article class="road-card now">
-          <p class="road-label">Now — dogfood</p>
-          <h3>Prove the teammate</h3>
-          <p>Palheim on Kirk’s land: dedicated server, bot-host client, local planner, gather/follow/fight loop that doesn’t embarrass us.</p>
-        </article>
-        <article class="road-card next">
-          <p class="road-label">Next — invite UX</p>
-          <h3>Join codes without folklore</h3>
-          <p>Website assignment + join codes so a stranger can pull Palheim into a session without SSH folklore.</p>
-        </article>
-        <article class="road-card later">
-          <p class="road-label">Later — reach</p>
-          <h3>Carry wood, then monetize</h3>
-          <p>Crossplay-aware invites, tighter voice, more skills. Monetize after the Viking actually carries wood.</p>
-        </article>
+        <article><p class="road-label">Now</p><h3>Dogfood</h3><p>Dedicated server, bot-host client, local planner — gather/follow/fight that doesn’t embarrass us.</p></article>
+        <article><p class="road-label">Next</p><h3>Invite UX</h3><p>Website + join codes without SSH folklore.</p></article>
+        <article><p class="road-label">Later</p><h3>Reach</h3><p>Crossplay-aware invites, voice, more skills. Monetize after the Viking carries wood.</p></article>
       </div>
-      <p class="kill-line">Kill criteria stay honest: if we can’t be a believable teammate on a dedicated server without vision-hacking the screen, we don’t ship a landing-page fantasy.</p>
     </section>
 
     <section id="waitlist" class="section waitlist-section">
-      <div class="waitlist-card">
-        <div class="waitlist-copy">
-          <p class="section-kicker">Early access</p>
-          <h2>Join the waitlist</h2>
-          <p>Dogfooding on our dedicated server first. Waitlist gets the early invite path when it doesn’t brick nights.</p>
-        </div>
-        <form id="waitlist-form" class="waitlist-form" novalidate>
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@longhouse.dev" required />
-          <button class="btn btn-primary" type="submit">Get early access</button>
-          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-          <p class="form-note">Stub form — no backend yet. We’ll wire invites when the Viking can carry wood.</p>
-        </form>
-      </div>
+      <h2>Join the waitlist</h2>
+      <p>Dogfooding first. Waitlist gets the early invite when it doesn’t brick nights.</p>
+      <form id="waitlist-form" class="waitlist-form" novalidate>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@longhouse.dev" required />
+        <button class="btn btn-primary" type="submit">Get early access</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
 
-    <section id="faq" class="section section-alt">
-      <div class="section-head">
-        <p class="section-kicker">Straight answers</p>
-        <h2>FAQ</h2>
-      </div>
-      <div class="faq" role="list">
-        <details open>
-          <summary>Do my friends need mods?</summary>
-          <p>No. Palheim is the one running tooling on a bot host. Everyone else stays vanilla.</p>
-        </details>
-        <details>
-          <summary>Is this an official Iron Gate / Coffee Stain project?</summary>
-          <p>No. Independent. Valheim is their game; Palheim is our experiment.</p>
-        </details>
-        <details>
-          <summary>Is it an NPC I install with r2modman?</summary>
-          <p>No. That’s the path we’re not taking. Palheim joins as a multiplayer player.</p>
-        </details>
-        <details>
-          <summary>Can I invite it to any server today?</summary>
-          <p>Not yet. We’re dogfooding on our own dedicated server first. Waitlist gets the early invite path when it doesn’t brick nights.</p>
-        </details>
-        <details>
-          <summary>Does it use a huge cloud AI bill?</summary>
-          <p>Bias is <strong>local LLM</strong> on our hardware. Cloud only where it earns its keep. Bootstrap target is roughly CAD $100–1000 — research kit, not a SaaS money pit.</p>
-        </details>
-        <details>
-          <summary>Voice?</summary>
-          <p>Text-first for the dogfood. Voice comes after the teammate can actually play.</p>
-        </details>
-        <details>
-          <summary>Steam / ToS?</summary>
-          <p>We treat automation and account risk as real. Dogfood carefully; no promises we can ignore Steam’s rules.</p>
-        </details>
-        <details>
-          <summary>Will it build my base / beat bosses alone?</summary>
-          <p>v0 is a teammate that follows, gathers, fights, and talks — not a fully autonomous raid leader. Ambition grows with competence.</p>
-        </details>
-        <details>
-          <summary>Console / crossplay?</summary>
-          <p>On the roadmap radar. Steam dedicated dogfood comes first.</p>
-        </details>
+    <section id="faq" class="section">
+      <p class="section-kicker">Straight answers</p>
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details open><summary>Do my friends need mods?</summary><p>No. Only our bot host runs tooling. Everyone else stays vanilla.</p></details>
+        <details><summary>Official Iron Gate project?</summary><p>No. Independent. Valheim is their game; Palheim is our experiment.</p></details>
+        <details><summary>r2modman NPC install?</summary><p>No. Invite-player path.</p></details>
+        <details><summary>Any server today?</summary><p>Not yet — dogfood first, then waitlist invites.</p></details>
+        <details><summary>Cloud AI bill?</summary><p>Local LLM bias. Bootstrap ~CAD $100–1000.</p></details>
+        <details><summary>Steam / ToS?</summary><p>Treated as real risk. Careful dogfood — no magic promises.</p></details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark" aria-hidden="true">ᚹ</span>
-        <div>
-          <strong>Palheim</strong>
-          <p>Invite-player AI for Valheim</p>
-        </div>
-      </div>
-      <p class="footer-line">Built in the north. No client mods for your friends.</p>
-      <p class="footer-legal">Independent project. Not affiliated with Iron Gate Studio or Coffee Stain. Valheim is their game.</p>
-    </div>
+    <strong>Palheim</strong>
+    <p>Invite-player AI for Valheim. Independent — not affiliated with Iron Gate or Coffee Stain.</p>
   </footer>
-
   <script src="main.js"></script>
 </body>
 </html>
