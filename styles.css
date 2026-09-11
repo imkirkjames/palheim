@@ -22,10 +22,14 @@ body {
 }
 .hero-bg {
   position: fixed; inset: 0; z-index: -2;
-  background: url("hero-web.jpg") center top / cover no-repeat;
+  background: url("hero-web.jpg?v=4") center center / cover no-repeat;
+  background-color: #071018;
 }
 @media (max-width: 720px) {
-  .hero-bg { background-position: center 28%; }
+  .hero-bg {
+    background-image: url("hero-mobile.jpg?v=4");
+    background-position: center 35%;
+  }
 }
 .hero-veil {
   position: fixed; inset: 0; z-index: -1;
