@@ -1,16 +1,29 @@
 const toggle = document.querySelector('.nav-toggle');
 const mobile = document.getElementById('mobile-nav');
+
+function setMenu(open) {
+  if (!toggle || !mobile) return;
+  toggle.setAttribute('aria-expanded', String(open));
+  toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  mobile.hidden = !open;
+  mobile.classList.toggle('is-open', open);
+}
+
 if (toggle && mobile) {
+  setMenu(false);
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    mobile.hidden = open;
+    setMenu(!open);
   });
-  mobile.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    mobile.hidden = true;
-  }));
+  mobile.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+  window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 900px)').matches) setMenu(false);
+  });
 }
+
 const form = document.getElementById('waitlist-form');
 const status = document.getElementById('form-status');
 if (form) {
