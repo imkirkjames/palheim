@@ -12,13 +12,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-veil" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <a class="logo" href="#top">Palheim</a>
     <nav class="nav" aria-label="Primary">
       <a href="#how">How it works</a>
@@ -27,26 +27,27 @@
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="#waitlist">Join waitlist</a>
     </nav>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <a href="#how">How it works</a>
+      <a href="#why">Why not a mod</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#waitlist">Join waitlist</a>
+    </nav>
   </header>
-  <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="#how">How it works</a>
-    <a href="#why">Why not a mod</a>
-    <a href="#roadmap">Roadmap</a>
-    <a href="#faq">FAQ</a>
-    <a class="nav-cta" href="#waitlist">Join waitlist</a>
-  </nav>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow"><span class="badge">Private dogfood · Valheim 1.0</span></p>
       <h1>Invite a Viking.<br /><em>Not a mod.</em></h1>
       <p class="subhead">Palheim joins your server as a multiplayer player. Your friends keep their vanilla clients — no BepInEx, no plugin roulette.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
         <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
-      <p class="micro-proof">Dogfooding first on our own dedicated server. Local-first brains. Bootstrap, not vapor.</p>
+      <p class="micro-proof">First on our own dedicated server. Local-first brains. Bootstrap, not vapor.</p>
     </section>
 
     <section id="how" class="section">
@@ -70,7 +71,7 @@
       <p class="section-kicker">Honest timeline</p>
       <h2>Roadmap</h2>
       <div class="roadmap">
-        <article><p class="road-label">Now</p><h3>Dogfood</h3><p>Dedicated server, bot-host client, local planner — gather/follow/fight that doesn’t embarrass us.</p></article>
+        <article><p class="road-label">Now</p><h3>Private play</h3><p>Dedicated server, bot-host client, local planner — gather/follow/fight that doesn’t embarrass us.</p></article>
         <article><p class="road-label">Next</p><h3>Invite UX</h3><p>Website + join codes without SSH folklore.</p></article>
         <article><p class="road-label">Later</p><h3>Reach</h3><p>Crossplay-aware invites, voice, more skills. Monetize after the Viking carries wood.</p></article>
       </div>
@@ -78,7 +79,7 @@
 
     <section id="waitlist" class="section waitlist-section">
       <h2>Join the waitlist</h2>
-      <p>Dogfooding first. Waitlist gets the early invite when it doesn’t brick nights.</p>
+      <p>Private play first. Waitlist gets the early invite when it doesn’t brick nights.</p>
       <form id="waitlist-form" class="waitlist-form" novalidate>
         <label class="sr-only" for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" placeholder="you@longhouse.dev" required />
@@ -94,9 +95,9 @@
         <details open><summary>Do my friends need mods?</summary><p>No. Only our bot host runs tooling. Everyone else stays vanilla.</p></details>
         <details><summary>Official Iron Gate project?</summary><p>No. Independent. Valheim is their game; Palheim is our experiment.</p></details>
         <details><summary>r2modman NPC install?</summary><p>No. Invite-player path.</p></details>
-        <details><summary>Any server today?</summary><p>Not yet — dogfood first, then waitlist invites.</p></details>
+        <details><summary>Any server today?</summary><p>Not yet — private play first, then waitlist invites.</p></details>
         <details><summary>Cloud AI bill?</summary><p>Local LLM bias. Bootstrap ~CAD $100–1000.</p></details>
-        <details><summary>Steam / ToS?</summary><p>Treated as real risk. Careful dogfood — no magic promises.</p></details>
+        <details><summary>Steam / ToS?</summary><p>Treated as real risk. Careful private play — no magic promises.</p></details>
       </div>
     </section>
   </main>
@@ -104,8 +105,8 @@
   <footer class="site-footer">
     <strong>Palheim</strong>
     <p>Invite-player AI for Valheim. Independent — not affiliated with Iron Gate or Coffee Stain.</p>
-    <p class="legal">© 2026 Keidi Studios</p>
+    <p class="legal">© 2026 Keidi Studios. All rights reserved.</p>
   </footer>
-  <script src="main.js"></script>
+  <script src="main.js?v=3"></script>
 </body>
 </html>
